@@ -1,7 +1,7 @@
 <?php 
 require 'connect.php';
 
-header('Access-Control-Allow-Origin: http://localhost:4200');
+header('Access-Control-Allow-Origin: https://engineersabroad.uvacreate.virginia.edu');
 header('Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, Authorization, Accept, Client-Security-Token, Accept-Encoding');
 header('Access-Control-Max-Age: 1000');
 header('Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT');
@@ -25,7 +25,7 @@ if(isset($postdata)&&!empty($postdata)){
     $password = mysqli_real_escape_string($con, trim($request->password));
 
     echo json_encode($request);
-    
+
     $sql = "INSERT INTO `users`(
         `name`, 
         `password`, 

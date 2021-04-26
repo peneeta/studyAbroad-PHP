@@ -1,9 +1,9 @@
 <?php 
 
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'studyabroad');
+define('DB_USER', 'engineer_ys2nc');
+define('DB_PASS', 'NE*t&RK@DB_}');
+define('DB_NAME', 'engineer_studyabroad');
 
 // Connect with database
 function connect()
@@ -19,4 +19,5 @@ function connect()
 }
 
 $con = connect();
+
 ?>
