@@ -1,7 +1,7 @@
 <?php 
 require 'connect.php';
 
-header('Access-Control-Allow-Origin: http://localhost:4200');
+header('Access-Control-Allow-Origin: https://engineersabroad.uvacreate.virginia.edu');
 header('Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, Authorization, Accept, Client-Security-Token, Accept-Encoding');
 header('Access-Control-Max-Age: 1000');
 header('Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PUT');
@@ -31,6 +31,7 @@ if(isset($postdata)&&!empty($postdata)){
  
     
     // add user to users table
+
     $sql = "INSERT INTO `users`(
         `name`, 
         `password`, 
@@ -80,13 +81,4 @@ if(isset($postdata)&&!empty($postdata)){
 }
 
 
-// $data = [];
-// $data[0]['length'] = $content_length;
-// foreach ($request as $k => $v)
-// {
-//   $data[0]['post_'.$k] = $v;
-// }
-
-// // // // Send response (in json format) back the front end
-// echo json_encode(['content'=>$data]);
 ?>
