@@ -1,7 +1,8 @@
 <?php
 session_start();
 require 'connect.php';
-header('Access-Control-Allow-Origin: https://engineersabroad.uvacreate.virginia.edu');
+header('Access-Control-Allow-Origin: https://engineersabroad.uvacreate.virginia.edu'); //comment out when using localhost
+//header('Access-Control-Allow-Origin: http://localhost:4200'); //comment out when using hosted server
 header('Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, Authorization, Accept, Client-Security-Token, Accept-Encoding');
 
 $postdata = file_get_contents("php://input");

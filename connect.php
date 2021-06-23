@@ -1,9 +1,12 @@
 <?php 
 
-define('DB_HOST', 'localhost');
-define('DB_USER', 'engineer_ys2nc');
-define('DB_PASS', 'NE*t&RK@DB_}');
-define('DB_NAME', 'engineer_studyabroad');
+define('DB_HOST', 'localhost'); //always keep this line for local and  server
+define('DB_USER', 'engineer_ys2nc'); //uncomment this line for when using server
+define('DB_PASS', 'NE*t&RK@DB_}'); //uncomment this line for when using server
+define('DB_NAME', 'engineer_studyabroad'); //uncomment this line for when using server
+// define('DB_USER', 'root'); //uncomment this line for when using local
+// define('DB_PASS', ''); //uncomment this line for when using local
+// define('DB_NAME', 'studyabroad'); //uncomment this line for when using local
 
 // Connect with database
 function connect()
