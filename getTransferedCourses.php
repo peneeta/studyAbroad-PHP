@@ -41,7 +41,7 @@ if(isset($getdata) && !empty($getdata)){
         $sql = "SELECT * FROM transferredCourses where major='$selectedMajor' and semester='$selectedTerm' and (program LIKE '%$freeSearchEntry%' OR UVAcourse LIKE '%$freeSearchEntry%' OR HostCourse LIKE '%$freeSearchEntry%' OR country LIKE '%$freeSearchEntry%')";
     }
 
-    $sql = $sql." ORDER BY program, UVAcourse";
+    $sql = $sql." ORDER BY country, program, UVAcourse";
 
     //echo json_encode($sql);
     if($result = mysqli_query($con, $sql)){

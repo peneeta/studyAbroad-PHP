@@ -12,6 +12,7 @@ if(isset($getdata) && !empty($getdata)){
 
     $selectedMajor = mysqli_real_escape_string($con, trim($request->major));
     $selectedTerm = mysqli_real_escape_string($con, trim($request->term));
+    //$selectedCountry = mysqli_real_escape_string($con, trim($request->country));
     
 
     //handle all possible cases of entries and the proper SQL code
